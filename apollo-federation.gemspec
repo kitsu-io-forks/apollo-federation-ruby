@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
     'changelog_uri' => 'https://github.com/Gusto/apollo-federation-ruby/releases',
     'source_code_uri' => 'https://github.com/Gusto/apollo-federation-ruby',
     'bug_tracker_uri' => 'https://github.com/Gusto/apollo-federation-ruby/issues',
+    'rubygems_mfa_required' => 'true',
   }
 
   spec.files = `git ls-files bin lib *.md LICENSE`.split("\n")
@@ -31,6 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'google-protobuf', '< 5'
 
   spec.add_development_dependency 'actionpack'
+  spec.add_development_dependency 'appraisal'
   spec.add_development_dependency 'debug'
   spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'rack'

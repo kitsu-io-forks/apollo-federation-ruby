@@ -1,3 +1,14 @@
+
+# [3.11.0](https://github.com/mondaycom/apollo-federation-ruby/compare/v3.8.5...v3.10.0) (2024-11-21)
+
+Imported from Monday fork
+
+### Features
+
+* add support for [@compose](https://github.com/compose)Directive ([#3](https://github.com/mondaycom/apollo-federation-ruby/issues/3)) ([6d7ccf2](https://github.com/mondaycom/apollo-federation-ruby/commit/6d7ccf2e98ead837847ab1b16b44b3b68adbfe84))
+* add [@policy](https://github.com/policy) and respect federation_version in link ([410ef6c](https://github.com/mondaycom/apollo-federation-ruby/commit/410ef6c99efc5e33b9c0cdd29161fc7451ae3a88))
+* re-add appraisals
+
 # [3.10.0](https://github.com/Gusto/apollo-federation-ruby/compare/v3.9.0...v3.10.0) (2025-02-05)
 
 
