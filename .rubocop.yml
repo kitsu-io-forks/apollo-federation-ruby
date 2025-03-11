@@ -88,3 +88,5 @@ RSpec/MatchArray:
 # Rubocop only supports >= 2.3
 Gemspec/RequiredRubyVersion:
   Enabled: false
+RSpec/FilePath:
+  Enabled: false
