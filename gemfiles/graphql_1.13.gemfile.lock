@@ -1,9 +1,9 @@
 PATH
   remote: ..
   specs:
-    apollo-federation (3.6.0)
-      google-protobuf (~> 3.21.7)
-      graphql (>= 1.10.14)
+    apollo-federation (3.10.0)
+      google-protobuf (~> 3.22)
+      graphql
 
 GEM
   remote: https://rubygems.org/
@@ -26,7 +26,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    appraisal (2.4.1)
+    appraisal (2.5.0)
       bundler
       rake
       thor (>= 0.14.0)
@@ -36,36 +36,54 @@ GEM
     coderay (1.1.3)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
-    debase (0.2.5.beta2)
-      debase-ruby_core_source (>= 0.10.12)
-    debase-ruby_core_source (3.2.0)
+    date (3.4.1)
+    debug (1.10.0)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
     diff-lcs (1.5.0)
     erubi (1.12.0)
-    google-protobuf (3.21.12)
+    google-protobuf (3.25.6-arm64-darwin)
     graphql (1.13.19)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    jaro_winkler (1.5.4)
+    io-console (0.8.0)
+    irb (1.15.1)
+      pp (>= 0.6.0)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
+    jaro_winkler (1.5.6)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     method_source (1.0.0)
     minitest (5.18.0)
+    mutex_m (0.3.0)
     nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
-    parallel (1.22.1)
-    parser (3.2.1.1)
+    ostruct (0.6.1)
+    parallel (1.26.3)
+    parser (3.3.7.1)
       ast (~> 2.4.1)
+      racc
+    pp (0.6.2)
+      prettyprint
+    prettyprint (0.2.0)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
     pry-byebug (3.10.1)
       byebug (~> 11.0)
       pry (>= 0.13, < 0.15)
+    psych (5.2.3)
+      date
+      stringio
     racc (1.6.2)
     rack (2.2.6.4)
     rack-test (2.1.0)
       rack (>= 1.3)
+    rackup (1.0.1)
+      rack (< 3)
+      webrick
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -73,6 +91,10 @@ GEM
       loofah (~> 2.19, >= 2.19.1)
     rainbow (3.1.1)
     rake (13.0.6)
+    rdoc (6.11.0)
+      psych (>= 4.0.0)
+    reline (0.6.0)
+      io-console (~> 0.5)
     rspec (3.12.0)
       rspec-core (~> 3.12.0)
       rspec-expectations (~> 3.12.0)
@@ -86,7 +108,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
-    rubocop (0.72.0)
+    rubocop (0.75.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
@@ -95,10 +117,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.7)
     rubocop-rspec (1.41.0)
       rubocop (>= 0.68.1)
-    ruby-debug-ide (0.7.3)
-      rake (>= 0.8.1)
     ruby-progressbar (1.13.0)
-    thor (1.2.1)
+    stringio (3.1.2)
+    thor (1.3.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.6.1)
@@ -107,20 +128,23 @@ GEM
 PLATFORMS
   arm64-darwin-21
   arm64-darwin-22
+  arm64-darwin-23
 
 DEPENDENCIES
   actionpack
   apollo-federation!
-  appraisal
-  debase (= 0.2.5.beta2)
+  appraisal (~> 2.5.0)
+  debug
   graphql (~> 1.13.6)
+  mutex_m
+  ostruct
   pry-byebug
   rack
+  rackup
   rake
   rspec
-  rubocop (~> 0.72.0)
+  rubocop (~> 0.75.0)
   rubocop-rspec
-  ruby-debug-ide
   webrick
 
 BUNDLED WITH
