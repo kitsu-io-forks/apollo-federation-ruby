@@ -9,3 +9,8 @@ node_modules/
 .circleci/processed-config.yml
 
 .DS_Store
+
+Gemfile.lock
+gemfiles/*.gemfile.lock
+
+.idea
